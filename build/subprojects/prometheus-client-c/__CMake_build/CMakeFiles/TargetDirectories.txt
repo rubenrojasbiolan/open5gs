@@ -1,0 +1,17 @@
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/install/strip.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/install/local.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/edit_cache.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/package_source.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/install.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/list_install_components.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/rebuild_cache.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/CMakeFiles/package.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/install/strip.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/install/local.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/edit_cache.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/install.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/list_install_components.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/rebuild_cache.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/package.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/package_source.dir
+/home/open5gs/open5gs/build/subprojects/prometheus-client-c/__CMake_build/prom/CMakeFiles/prom.dir

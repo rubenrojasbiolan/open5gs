@@ -9,42 +9,42 @@ global:
 #    peer: 64
 
 sepp:
-  default:
-    tls:
-      server:
-        private_key: @sysconfdir@/open5gs/tls/sepp2.key
-        cert: @sysconfdir@/open5gs/tls/sepp2.crt
+#  default:
+#    tls:
+#      server:
+#        private_key: @sysconfdir@/open5gs/tls/sepp2.key
+#        cert: @sysconfdir@/open5gs/tls/sepp2.crt
 #        sslkeylogfile: @localstatedir@/log/open5gs/tls/sepp2-server-sslkeylog.log
-      client:
-        cacert: @sysconfdir@/open5gs/tls/ca.crt
+#      client:
+#        cacert: @sysconfdir@/open5gs/tls/ca.crt
 #        sslkeylogfile: @localstatedir@/log/open5gs/tls/sepp2-client-sslkeylog.log
-  sbi:
-    server:
-      - address: 127.0.2.250
-        port: 7777
-    client:
+#  sbi:
+#    server:
+#      - address: 127.0.2.250
+#        port: 7777
+#    client:
 #      nrf:
 #        - uri: http://127.0.0.10:7777
-      scp:
-        - uri: http://127.0.0.200:7777
-  n32:
-    server:
-      - sender: sepp2.localdomain
-        scheme: https
-        address: 127.0.2.251
-        port: 7777
-        n32f:
-          scheme: https
-          address: 127.0.2.252
-          port: 7777
-    client:
-      sepp:
-        - receiver: sepp1.localdomain
-          uri: https://sepp1.localdomain:7777
-          resolve: 127.0.1.251
-          n32f:
-            uri: https://sepp1.localdomain:7777
-            resolve: 127.0.1.252
+#      scp:
+#        - uri: http://127.0.0.200:7777
+#  n32:
+#    server:
+#      - sender: sepp2.localdomain
+#        scheme: https
+#        address: 127.0.2.251
+#        port: 7777
+#        n32f:
+#          scheme: https
+#          address: 127.0.2.252
+#          port: 7777
+#    client:
+#      sepp:
+#        - receiver: sepp1.localdomain
+#          uri: https://sepp1.localdomain:7777
+#          resolve: 127.0.1.251
+#          n32f:
+#            uri: https://sepp1.localdomain:7777
+#            resolve: 127.0.1.252
 
 ################################################################################
 # SEPP Info
@@ -153,32 +153,32 @@ sepp:
 #  o Enable SSL key logging for Wireshark
 #    - This configuration allows capturing SSL/TLS session keys
 #      for debugging or analysis purposes using Wireshark.
-#  default:
-#    tls:
-#      server:
-#        private_key: @sysconfdir@/open5gs/tls/sepp2.key
-#        cert: @sysconfdir@/open5gs/tls/sepp2.crt
-#        sslkeylogfile: @localstatedir@/log/open5gs/tls/sepp2-server-sslkeylog.log
-#      client:
-#        cacert: @sysconfdir@/open5gs/tls/ca.crt
-#        client_sslkeylogfile: @localstatedir@/log/open5gs/tls/sepp2-client-sslkeylog.log
-#  sbi:
-#    server:
-#      - address: 127.0.2.250
-#        port: 7777
-#    client:
-#      scp:
-#        - uri: http://127.0.0.200:7777
-#  n32:
-#    server:
-#      - sender: sepp2.localdomain
-#        scheme: https
-#        address: 127.0.2.251
-#    client:
-#      sepp:
-#        - receiver: sepp1.localdomain
-#          uri: https://sepp1.localdomain
-#          resolve: 127.0.1.251
+  default:
+    tls:
+      server:
+        private_key: @sysconfdir@/open5gs/tls/sepp2.key
+        cert: @sysconfdir@/open5gs/tls/sepp2.crt
+        sslkeylogfile: @localstatedir@/log/open5gs/tls/sepp2-server-sslkeylog.log
+      client:
+        cacert: @sysconfdir@/open5gs/tls/ca.crt
+        client_sslkeylogfile: @localstatedir@/log/open5gs/tls/sepp2-client-sslkeylog.log
+  sbi:
+    server:
+      - address: 127.0.2.250
+        port: 7777
+    client:
+      scp:
+        - uri: http://127.0.0.200:7777
+  n32:
+    server:
+      - sender: sepp2.localdomain
+        scheme: https
+        address: 127.0.2.251
+    client:
+      sepp:
+        - receiver: sepp1.localdomain
+          uri: https://sepp1.localdomain
+          resolve: 127.0.1.251
 #
 #  o Add client TLS verification to N32 interface
 #  default:

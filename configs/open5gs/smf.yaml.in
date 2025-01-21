@@ -9,15 +9,15 @@ global:
 #    peer: 64
 
 smf:
-  sbi:
-    server:
-      - address: 127.0.0.4
-        port: 7777
-    client:
+#  sbi:
+#    server:
+#      - address: 127.0.0.4
+#        port: 7777
+#    client:
 #      nrf:
 #        - uri: http://127.0.0.10:7777
-      scp:
-        - uri: http://127.0.0.200:7777
+#      scp:
+#        - uri: http://127.0.0.200:7777
   pfcp:
     server:
       - address: 127.0.0.4
@@ -287,23 +287,23 @@ smf:
 #  o Enable SSL key logging for Wireshark
 #    - This configuration allows capturing SSL/TLS session keys
 #      for debugging or analysis purposes using Wireshark.
-#  default:
-#    tls:
-#      server:
-#        scheme: https
-#        private_key: @sysconfdir@/open5gs/tls/smf.key
-#        cert: @sysconfdir@/open5gs/tls/smf.crt
-#        sslkeylogfile: @localstatedir@/log/open5gs/tls/smf-server-sslkeylog.log
-#      client:
-#        scheme: https
-#        cacert: @sysconfdir@/open5gs/tls/ca.crt
-#        client_sslkeylogfile: @localstatedir@/log/open5gs/tls/smf-client-sslkeylog.log
-#  sbi:
-#    server:
-#      - address: smf.localdomain
-#    client:
-#      nrf:
-#        - uri: https://nrf.localdomain
+  default:
+    tls:
+      server:
+        scheme: https
+        private_key: @sysconfdir@/open5gs/tls/smf.key
+        cert: @sysconfdir@/open5gs/tls/smf.crt
+        sslkeylogfile: @localstatedir@/log/open5gs/tls/smf-server-sslkeylog.log
+      client:
+        scheme: https
+        cacert: @sysconfdir@/open5gs/tls/ca.crt
+        client_sslkeylogfile: @localstatedir@/log/open5gs/tls/smf-client-sslkeylog.log
+  sbi:
+    server:
+      - address: smf.localdomain
+    client:
+      nrf:
+        - uri: https://nrf.localdomain
 #
 #  o Add client TLS verification
 #  default:
