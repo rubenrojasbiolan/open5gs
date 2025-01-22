@@ -24,6 +24,24 @@ If you find Open5GS useful for work, please consider supporting this Open Source
   </a>
 </p>
 
+## Ruben's Notes:
+
+Building with these configurations should allow you to use UERANSIM from another Machine aswell as enabling TLS for the NF's.
+
+Add the following to /etc/hosts:
+
+# Open5GS Network Functions
+127.0.0.10 nrf.localdomain
+127.0.0.11 ausf.localdomain
+127.0.0.12 udm.localdomain
+127.0.0.13 pcf.localdomain
+127.0.0.14 nssf.localdomain
+127.0.0.15 bsf.localdomain
+127.0.0.20 udr.localdomain
+127.0.0.200 scp.localdomain
+127.0.0.4 smf.localdomain
+127.0.0.5 amf.localdomain
+
 ## Community
 
 - Problem with Open5GS can be filed as [issues](https://github.com/open5gs/open5gs/issues) in this repository.
