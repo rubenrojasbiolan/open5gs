@@ -30,7 +30,7 @@ Building with these configurations should allow you to use UERANSIM from another
 
 Add the following to /etc/hosts:
 
-# Open5GS Network Functions
+Open5GS Network Functions
 127.0.0.10 nrf.localdomain
 127.0.0.11 ausf.localdomain
 127.0.0.12 udm.localdomain
