@@ -1,3 +1,22 @@
+## Ruben's Notes:
+
+Building with these configurations should allow you to use UERANSIM from another Machine aswell as enabling TLS for the NF's.
+
+Add the following to /etc/hosts:
+
+### Open5GS Network Functions
+
+`127.0.0.10 nrf.localdomain
+127.0.0.11 ausf.localdomain
+127.0.0.12 udm.localdomain
+127.0.0.13 pcf.localdomain
+127.0.0.14 nssf.localdomain
+127.0.0.15 bsf.localdomain
+127.0.0.20 udr.localdomain
+127.0.0.200 scp.localdomain
+127.0.0.4 smf.localdomain
+127.0.0.5 amf.localdomain`
+
 <p align="center"><a href="https://open5gs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://open5gs.org/assets/img/open5gs-logo-only.png" alt="Open5GS logo"></a></p>
 
 ## Getting Started
@@ -23,24 +42,6 @@ If you find Open5GS useful for work, please consider supporting this Open Source
       <img alt="sponsors" src="https://open5gs.org/assets/img/sponsors.svg">
   </a>
 </p>
-
-## Ruben's Notes:
-
-Building with these configurations should allow you to use UERANSIM from another Machine aswell as enabling TLS for the NF's.
-
-Add the following to /etc/hosts:
-
-Open5GS Network Functions
-127.0.0.10 nrf.localdomain
-127.0.0.11 ausf.localdomain
-127.0.0.12 udm.localdomain
-127.0.0.13 pcf.localdomain
-127.0.0.14 nssf.localdomain
-127.0.0.15 bsf.localdomain
-127.0.0.20 udr.localdomain
-127.0.0.200 scp.localdomain
-127.0.0.4 smf.localdomain
-127.0.0.5 amf.localdomain
 
 ## Community
 
