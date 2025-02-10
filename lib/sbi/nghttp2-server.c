@@ -255,12 +255,11 @@ static SSL_CTX *create_ssl_ctx(
         ogs_warn("Could not load system trusted ca certificates: %s",
                 ERR_error_string(ERR_get_error(), NULL));
     }
-
 #define OGS_TLS_MIN_VERSION TLS1_VERSION
 #ifdef TLS1_3_VERSION
-#define OGS_TLS_MAX_VERSION TLS1_3_VERSION
+#define OGS_TLS_MAX_VERSION TLS1_1_VERSION
 #else  /* !TLS1_3_VERSION */
-#define OGS_TLS_MAX_VERSION TLS1_2_VERSION
+#define OGS_TLS_MAX_VERSION TLS1_1_VERSION
 #endif /* TLS1_3_VERSION */
     if (ssl_ctx_set_proto_versions(
                 ssl_ctx, OGS_TLS_MIN_VERSION, OGS_TLS_MAX_VERSION) != 0) {
@@ -274,7 +273,7 @@ static SSL_CTX *create_ssl_ctx(
     "AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-" \
     "POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-" \
     "AES256-GCM-SHA384"
-    if (SSL_CTX_set_cipher_list(ssl_ctx, DEFAULT_CIPHER_LIST) == 0) {
+    if (SSL_CTX_set_cipher_list(ssl_ctx, "ALL:!aNULL:!eNULL:!LOW:!EXP:!MD5:@STRENGTH") == 0) {
         ogs_error("%s", ERR_error_string(ERR_get_error(), NULL));
         return NULL;
     }
