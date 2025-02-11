@@ -1,5 +1,0 @@
-[options]
-prefix = /home/open5gs/open5gs/install
-
-[properties]
-
